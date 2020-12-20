@@ -10,7 +10,7 @@ function renderLicenseLink(license) {
   if(license === "None") {
     return ""
   }
-  return ` ### 'See more ${license} usage terms here: https://opensource.org/licenses/${license} '`
+  return ` ### See more ${license} usage terms here: https://opensource.org/licenses/${license}`
 }
 
 // TODO: Create a function that returns the license section of README
@@ -32,20 +32,36 @@ function generateMarkdown(data) {
   #### ${data.description}
 
   ## Table of Contents
+  [Installation](#Installation)
+
+  [How To Use](#Usage)
+
+  [Images](#Images)
+
+  [License](#License)
+
+  [Contribute](#Contribute)
+
+  [Contact Me](#Contact)
 
   ## Installation 
   ${data.install}
 
-  ## How To Use 
+  ## Usage 
   ${data.usage}
+
+  ## Images
+
 
   ## License
   ${data.license}
+  ${renderLicenseLink(data.license)}
+ 
 
   ## Contribute
   ${data.contribute}
 
-  ## Contact Me
+  ## Contact
   GitHub Username: ${data.username}
   Email: ${data.email}
   

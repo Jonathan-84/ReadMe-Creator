@@ -1,26 +1,42 @@
-# Ream Me 
+# sdas 
 
-  #### [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+  #### [![License: GNU](https://img.shields.io/badge/License-GNU-green.svg)](https://opensource.org/licenses/GNU)
 
-  #### Auto generate a readm
+  #### sad
 
   ## Table of Contents
+  [Installation](#Installation)
+
+  [How To Use](#Usage)
+
+  [Images](#Images)
+
+  [License](#License)
+
+  [Contribute](#Contribute)
+
+  [Contact Me](#Contact)
 
   ## Installation 
-  Install the inquirer package
+  das
 
-  ## How To Use 
-  In command line type Node index
+  ## Usage 
+  das
+
+  ## Images
+
 
   ## License
-  MIT
+  GNU
+   ### See more GNU usage terms here: https://opensource.org/licenses/GNU
+ 
 
   ## Contribute
-  dasdasda
+  das
 
-  ## Contact Me
-  GitHub Username: sadsdasd
-  Email: sadasdasd
+  ## Contact
+  GitHub Username: das
+  Email: das
   
 
   
