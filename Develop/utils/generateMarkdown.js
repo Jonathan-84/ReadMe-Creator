@@ -19,7 +19,7 @@ function renderLicenseSection(license) {
   if(license === "None") {
     return ""
   }
-  return ` #### 'Find the ${license} information here'`
+  return `#License`
 }
 
 
@@ -29,7 +29,7 @@ function generateMarkdown(data) {
 
   #### ${renderLicenseBadge(data.license)}
 
-  #### ${data.description}
+  ### ${data.description}
 
   ## Table of Contents
   [Installation](#Installation)
@@ -38,7 +38,7 @@ function generateMarkdown(data) {
 
   [Images](#Images)
 
-  [License](#License)
+  [License](${renderLicenseSection(data.license)})
 
   [Contribute](#Contribute)
 
