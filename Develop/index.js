@@ -1,26 +1,23 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require('util');
+const generateMarkdown = require('./utils/generateMarkdown');
+const path= require("path");
+//const util = require('util');
 // TODO: Create an array of questions for user input
-const questions = [] => inquirer.prompt([
+const questions = [
     {
         type: "input",
         name: "title",
         message: "What is the application name?",
       },
       {
-        type: "editor",
+        type: "input",
         name: "description",
         message: "Description of your Program?",
       },
       {
-        type: "editor",
-        name: "tableofcontents",
-        message: "Table of Contents?",
-      },
-      {
-        type: "editor",
+        type: "input",
         name: "install",
         message: "How to Install Program?",
       },
@@ -30,15 +27,22 @@ const questions = [] => inquirer.prompt([
         message: "Link to your repository?",
       },
       {
-        type: "editor",
+        type: "input",
         name: "usage",
         message: "How to use your Program?",
+      },
+      {
+        type: "input",
+        name: "technology",
+        message: "What languages and frameworks did you use to build this program?",
       },
       {
         type: "list",
         name: "license",
         message: "What is your programs License?",
         choices: [
+          "None",
+          new inquirer.Separator(),
           "GNU",
           new inquirer.Separator(),
           "MIT",
@@ -47,14 +51,9 @@ const questions = [] => inquirer.prompt([
         ],
       },
       {
-        type: "editor",
+        type: "input",
         name: "contribute",
         message: "How you can contribute?",
-      },
-      {
-        type: "input",
-        name: "video",
-        message: "Video Link?",
       },
       {
         type: "input",
@@ -66,12 +65,20 @@ const questions = [] => inquirer.prompt([
         name: "email",
         message: "What is your email?",
       },
-    ]);
+    ];
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFileSync(path.join(process.cwd(), fileName), data)
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions)
+  .then(data => {
+    console.log(data)
+    writeToFile("README.md", generateMarkdown(data))
+  })
+}
 
 // Function call to initialize app
 init();
