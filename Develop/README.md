@@ -26,9 +26,16 @@
   In order to use the application, make sure that you have the Inquirer npm package installed. Using your preferred coding application’s (VS Code in my case) terminal, confirm that you are in the Develop folder. Once in the Develop folder, type “node index” and answer the questions. After answering all of the questions, your new ReadMe file will be created.  
 
   ## Images
+![Markdown JS File](https://raw.githubusercontent.com/Jonathan-84/ReadMe-Creator/master/Develop/img/GenerateMarkdown.jpg)
+
+![Index JS File](https://raw.githubusercontent.com/Jonathan-84/ReadMe-Creator/master/Develop/img/IndexJS.jpg)
+
+![Generated ReadMe File](https://raw.githubusercontent.com/Jonathan-84/ReadMe-Creator/master/Develop/img/Generated%20ReadMe%20File.jpg)
 
   ## Test
   [Check out the Test](https://drive.google.com/file/d/17CG8QlL6WgPpKLzY0eYw7si7KI1OpoTG/view)
+
+<iframe src="https://drive.google.com/file/d/17CG8QlL6WgPpKLzY0eYw7si7KI1OpoTG/preview" width="640" height="480"></iframe>
 
   ## License
   MIT
