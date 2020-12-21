@@ -38,6 +38,8 @@ function generateMarkdown(data) {
 
   [Images](#Images)
 
+  [Test](#Test)
+
   [License](${renderLicenseSection(data.license)})
 
   [Contribute](#Contribute)
@@ -52,6 +54,7 @@ function generateMarkdown(data) {
 
   ## Images
 
+  ## Test
 
   ## License
   ${data.license}
