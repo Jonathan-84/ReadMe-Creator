@@ -35,7 +35,6 @@
   ## Test
   [Check out the Test](https://drive.google.com/file/d/17CG8QlL6WgPpKLzY0eYw7si7KI1OpoTG/view)
 
-<iframe src="https://drive.google.com/file/d/17CG8QlL6WgPpKLzY0eYw7si7KI1OpoTG/preview" width="640" height="480"></iframe>
 
   ## License
   MIT
